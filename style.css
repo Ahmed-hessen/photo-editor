@@ -29,7 +29,7 @@ body {
     gap: 50px;
     margin-top: 50px;
 }
-.images .image img , canvas  {
+.images .image img ,.images .image canvas  {
     height: 100%;
     width: 100%;
 }
