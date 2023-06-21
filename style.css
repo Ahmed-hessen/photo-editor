@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    background: rgb(18, 18, 18);
+}
+.container {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: rgb(63, 53, 53);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+     /* the left class */
+.images {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+.images .image img , canvas  {
+    height: 100%;
+    width: 100%;
+}
+.images .upload input {
+    display: none;
+}
+.images .upload {
+    margin-bottom: 20px;
+}
+.images .upload label {
+    border: 1px white dashed;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.images .upload label:hover {
+    background-color: rgb(114, 114, 114) ;
+}
+
+        /* the right class */
+.filters  {
+    width: 30%;
+    margin: 50px 20px 20px 0 ;
+}
+.filters ul , .filters ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    direction: rtl;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.filters ul li a , span {
+    color: white;
+    text-decoration: none;
+    background-color:rgb(5, 100, 253);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.filters ul li a:hover , span:hover {
+    background-color:rgb(46, 133, 255);
+}
+
+.filters ul li:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width:480px){
+    .container {
+        display: flex;
+        flex-direction: column;
+    }.filters ul , .filters ul li{
+        gap: 15px;
+    }
+}
+
